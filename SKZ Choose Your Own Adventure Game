@@ -1,3 +1,47 @@
+print("What's your name man?")
+name = input().capitalize()
+while len(name) < 3 or len(name) > 50:
+    if len(name) < 3:
+        print("Name must be at least 3 characters.")
+        break
+    if len(name) > 50:
+        print("that name is too long dude.")
+        break
+if 3 < len(name) < 50:
+    print("tight name homie")
+print("btw your name has " + str(len(name)) + " characters in it d00d.")
+#===============================End name input-^====================
+
+#============Begin bias input-v======================================
+print("who is your skz bias?")
+bias = input().capitalize()
+if bias == "Felix" or bias == "Lee yongbok":
+# For some reason if I put or in Felix's condition, code only outputs "Felix! nice."
+# The or command works on the other lines just fine though...
+# Update: no, they dont. output defaults to which ever print operation had 'or' in it.
+# 10/22/22 Update: I figured it out! you have to write out the full or bias ==, like the whole thing, not just or
+    print("Felix! nice!")
+elif bias == "Bang chan" or bias == "Chan" or bias == "Chris":
+    print("bang chan! nice.")
+elif bias == "Hyunjin":
+    print("hyunjin! nice!")
+elif bias == "Han" or bias == "Jinsung":
+    print("han! nice!")
+elif bias == "Seungmin":
+    print("hayyyy seungmin~~")
+elif bias == "I.n." or bias == "Jeongin":
+    print("baby bread!")
+elif bias == "Changbin":
+    print("Changbin! nice!")
+elif bias == "Lee know" or bias == "Lino" or bias == "Minho" or bias == "Lee minho":
+    print("lee know! nice!")
+else:
+    print("cool stuff, nevermind then")
+    bias = "nobody"
+print(f'So your bias is {bias}, huh? You have good taste!')
+
+#=============Begin choose your own adventure=============================
+
 command = ""
 while True:
     print('''
