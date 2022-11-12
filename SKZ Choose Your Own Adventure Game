@@ -1,0 +1,44 @@
+command = ""
+while True:
+    print('''
+you see Stray Kids at KCON. What do?
+Type your choice:
+talk / cry / run / quit''')
+    command = input(">Enter command: ").lower()
+    if command == "talk":
+        print('''
+You decide to talk to them. As you approach, they start looking at you.
+You feel your heart sink. You're probably bothering them, so you run
+away, puking on someone as you go.''')
+        break
+    elif command == "run":
+        print(f'"{name}! Wait!" Says {bias}. "I have been waiting for you." Oh shit, now what do?')
+        print("Run / Kiss / Whoopie")
+        command_run = input(">Enter command: ").capitalize()
+        if command_run == "Kiss":
+            print('you and ' + bias + ' totally share a romantic kiss. Everyone freaks out! Good for you!')
+            print(f'you and {bias} totally share a romantic kiss. Everyone freaks out! Good for you, {name}!')
+            break
+        if command_run == "Whoopie":
+            print(f'''{bias} blushes. "Right now, {name}??? Whelp, it's your program after all!" {bias} drops his pants and you fugg in front of everyone. Whoa!''')
+            break
+        if command_run == "Run":
+            print("You run, ashamed of yourself. You miss 100% of the shots you don't take.")
+            break
+    elif command == "cry":
+        print(f'''{bias} wipes your tears. "Don't cry, {name}." says {bias}. Omgomgomg what do you do now, {name}?''')
+        print("Run / Kiss / Whoopie")
+        command_cry = input(">Enter Command ").capitalize()
+        if command_cry == "Run":
+            print("You run, ashamed of yourself. You miss 100% of the shots you don't take.")
+        elif command_cry == "Kiss":
+            print(f'''After {bias} wipes your tears, you kiss passionately. "I love you, {name}." Whispers {bias}.''')
+        elif command_cry == "Whoopie":
+            print(f'''{bias} blushes. "Right now, {name}??? Whelp, it's your program after all!" {bias} drops his pants and you fugg in front of everyone. Whoa!''')
+        break
+    elif command == "quit":
+        print("goodbye")
+        break
+else:
+    print("i dont know this command.")
+print("The end, thanks for playing.")
